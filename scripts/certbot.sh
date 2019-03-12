@@ -24,6 +24,7 @@ save_certbot_cert(){
   cp -fL "$cert_src/chain.pem" "$cert_dst/certs/chain.rsa.pem";
   cp -fL "$cert_src/fullchain.pem" "$cert_dst/certs/fullchain.rsa.pem";
   cp -fL "$cert_src/privkey.pem" "$cert_dst/private/privkey.rsa.pem";
+  cat "$cert_dst/certs/fullchain.rsa.pem" "$cert_dst/private/privkey.rsa.pem" > "$cert_dst/bundle.pem"
 }
 
 build_challenge_mode_args(){
