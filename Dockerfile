@@ -9,7 +9,7 @@ ENV \
   CHALLENGE_MODE=standalone \
   STAGING=1 \
   FORCE_RENEWAL=0 \
-  SSL_GROUP_ID=1337 \
+  SSL_GROUP_ID=root \
   MUST_STAPLE=0 \
   VERBOSE=0
 
